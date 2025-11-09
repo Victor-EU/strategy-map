@@ -11,12 +11,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Victor-EU/strategy-puzzle.git"
+    "url": "https://github.com/Victor-EU/strategy-map.git"
   },
   "bugs": {
-    "url": "https://github.com/Victor-EU/strategy-puzzle/issues"
+    "url": "https://github.com/Victor-EU/strategy-map/issues"
   },
-  "homepage": "https://github.com/Victor-EU/strategy-puzzle#readme",
+  "homepage": "https://strategy-map.app",
   "keywords": [
     "strategy",
     "diagram",
