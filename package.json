@@ -1,0 +1,62 @@
+{
+  "name": "strategy-map",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A beautiful, browser-based interactive strategy mapping tool inspired by Excalidraw. Create hand-drawn style diagrams with nodes, arrows, and text labels to visualize your strategies, plans, and ideas.",
+  "author": {
+    "name": "Victor Zhang",
+    "email": "victor.zhang.eu@gmail.com",
+    "url": "https://www.linkedin.com/in/victor-yuchi-zhang/"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Victor-EU/strategy-puzzle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Victor-EU/strategy-puzzle/issues"
+  },
+  "homepage": "https://github.com/Victor-EU/strategy-puzzle#readme",
+  "keywords": [
+    "strategy",
+    "diagram",
+    "mapping",
+    "visualization",
+    "planning",
+    "excalidraw",
+    "canvas",
+    "drawing",
+    "whiteboard",
+    "mind-map",
+    "flow-chart",
+    "interactive",
+    "typescript",
+    "react"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vercel/node": "^5.5.4",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.1"
+  },
+  "dependencies": {
+    "@vercel/kv": "^3.0.0",
+    "nanoid": "^5.1.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5"
+  }
+}

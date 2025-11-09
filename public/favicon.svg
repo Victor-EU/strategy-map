@@ -1,0 +1,47 @@
+<svg width="32" height="32" viewBox="14 14 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions for depth -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4DABF7" stop-opacity="1" />
+      <stop offset="100%" stop-color="#1971C2" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#63E6BE" stop-opacity="1" />
+      <stop offset="100%" stop-color="#20C997" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="1" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/>
+      <feOffset dx="0" dy="0.5" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Connection lines with subtle glow -->
+  <g opacity="0.6">
+    <line x1="28" y1="40" x2="52" y2="28" stroke="url(#blueGrad)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="28" y1="40" x2="52" y2="52" stroke="url(#blueGrad)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="52" y1="28" x2="52" y2="52" stroke="url(#purpleGrad)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Main nodes with gradients and subtle shadows -->
+  <g filter="url(#shadow)">
+    <!-- Central node - primary -->
+    <circle cx="28" cy="40" r="13" fill="url(#blueGrad)"/>
+
+    <!-- Top right node -->
+    <circle cx="52" cy="28" r="11" fill="url(#greenGrad)"/>
+
+    <!-- Bottom right node -->
+    <circle cx="52" cy="52" r="11" fill="url(#purpleGrad)"/>
+  </g>
+</svg>

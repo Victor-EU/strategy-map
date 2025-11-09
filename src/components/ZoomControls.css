@@ -1,0 +1,75 @@
+/* Zoom Controls - Floating UI element */
+.zoom-controls {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  left: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xs);
+  box-shadow: var(--shadow-md);
+  z-index: 100;
+}
+
+/* Zoom Button */
+.zoom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.zoom-button:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.zoom-button:active {
+  background-color: var(--color-bg-tertiary);
+  transform: scale(0.95);
+}
+
+/* Zoom Reset Button */
+.zoom-reset {
+  min-width: 60px;
+  height: 32px;
+  padding: 0 var(--spacing-sm);
+  font-size: 13px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-family-base);
+}
+
+.zoom-reset:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.zoom-reset:active {
+  background-color: var(--color-bg-tertiary);
+  transform: scale(0.95);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .zoom-controls {
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+  }
+}

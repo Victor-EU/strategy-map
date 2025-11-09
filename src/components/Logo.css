@@ -1,0 +1,22 @@
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.logo-svg {
+  display: block;
+}
+
+/* Hover effect */
+.logo-container:hover .logo-svg circle {
+  transition: all var(--transition-fast);
+  opacity: 1;
+}
+
+.logo-container:hover .logo-svg path {
+  transition: all var(--transition-fast);
+  stroke-width: 2.5;
+}

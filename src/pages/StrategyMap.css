@@ -1,0 +1,22 @@
+/* App Layout - Local Styles */
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+  }
+}
