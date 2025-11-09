@@ -2,6 +2,8 @@
 
 > A beautiful, browser-based interactive strategy mapping tool inspired by Excalidraw. Create hand-drawn style diagrams with nodes, arrows, and text labels to visualize your strategies, plans, and ideas.
 
+🌐 **Live App**: [https://strategy-map.app](https://strategy-map.app)
+
 [![Production Ready](https://img.shields.io/badge/production-ready-brightgreen.svg)](https://github.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb.svg)](https://reactjs.org/)
@@ -47,8 +49,8 @@
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd strategy-puzzle
+git clone https://github.com/Victor-EU/strategy-map.git
+cd strategy-map
 
 # Install dependencies
 npm install
@@ -178,7 +180,7 @@ See [claude.md](./claude.md) for comprehensive architecture documentation.
 ## 📦 Project Structure
 
 ```
-strategy-puzzle/
+strategy-map/
 ├── src/
 │   ├── components/        # React components
 │   │   ├── Canvas.tsx
